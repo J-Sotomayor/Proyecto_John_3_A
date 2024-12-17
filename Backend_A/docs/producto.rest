@@ -1,0 +1,19 @@
+###Listar productos
+
+GET http://localhost:3000/producto
+
+
+###Crear Producto
+
+POST http://localhost:3000/producto
+Content-Type: application/json
+ 
+{
+    "nombre": "Impresora Laser",
+    "precio": "500.95",
+    "stock": 12,
+    "categoriaId": 1
+}   
+
+### Busqueda por nombre
+GET http://localhost:3000/producto/back?page=18q=mm&sort=asc
